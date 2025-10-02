@@ -2,36 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatbot</title>
+    <title>Simple Chatbot</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="chatbot-container">
-        <div id="header">
-            <h1>Chatbot</h1>
+        <div class="chat-header">
+            <h3>My Simple Chatbot</h3>
         </div>
-        <div id="chatbot">
-            <div id="chat">
-               <div id="conversation">
-              <div class="chatbot-message"></div></div>
-                <p class="chatbot-text">Hi! 👋 it''s great to see you!</p>
-              </div>
-            </div>
-            <form id="input-form">
-              <message-container>
-                <input id="input-field" type="text" placeholder="Type your message here">
-                <button id="submit-button" type="submit">
-                  <img class="send-icon" src="send-message.png" alt="">
-                </button>
-              </message-container>
-                
-            </form>
-        </div>  
-
+        <div class="chat-messages" id="chat-messages">
+            <!-- Messages will appear here -->
+            <div class="message bot-message">Hello! How can I help you today?</div>
+        </div>
+        <div class="chat-input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-button">Send</button>
+        </div>
     </div>
 
-    <script src="chat.js"></script>
+    <script src="script.js"></script> <!-- Link to JavaScript file for functionality -->
 </body>
 </html>
