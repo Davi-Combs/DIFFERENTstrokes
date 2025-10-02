@@ -4,7 +4,7 @@ const messagesDiv = document.getElementById("messages");
 const input = document.getElementById("userInput");
 
 // Change this to your deployed Vercel URL
-const API_URL = "api/chat";
+const API_URL = "https://differen-strokes.vercel.app/api/chat";
 
 
 form.addEventListener("submit", async (e) => {
